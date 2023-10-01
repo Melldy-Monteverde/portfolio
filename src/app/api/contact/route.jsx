@@ -24,10 +24,10 @@ export const POST = async (req) => {
 
     const sendMail = async () => {
       // INFO: GMAIL
-      // const transporter = createTransportGmail()
+      const transporter = createTransportGmail()
 
       // INFO: LOCAL
-      const transporter = createTestTransport()
+      // const transporter = createTestTransport()
 
       const info = await transporter.sendMail(message)
       console.log(info)

@@ -18,10 +18,10 @@ export const createTestTransport = () => {
 const configGmail = {
   host: process.env.GMAIL_SMTP_HOST,
   port: process.env.GMAIL_SMTP_PORT,
-  secure: false,
+  secure: true,
   auth: {
-    user: process.env.GMAIL_SMTP_USERNAME,
-    pass: process.env.GMAIL_SMTP_PASSWORD
+    user: process.env.GMAIL_SMTP_USER,
+    pass: process.env.GMAIL_SMTP_PASS
   }
 }
 
